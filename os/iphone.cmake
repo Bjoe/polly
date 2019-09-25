@@ -157,15 +157,6 @@ set(CMAKE_XCODE_ATTRIBUTE_ENABLE_BITCODE NO)
 if("${CMAKE_VERSION}" VERSION_GREATER_EQUAL "3.14")
   # set proper system name see https://cmake.org/cmake/help/v3.14/manual/cmake-toolchains.7.html#cross-compiling-for-ios-tvos-or-watchos
   set(CMAKE_SYSTEM_NAME "iOS")
-  # set(CMAKE_OSX_DEPLOYMENT_TARGET "${CMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET}")
-  # set(CMAKE_XCODE_ATTRIBUTE_ONLY_ACTIVE_ARCH NO)
-  # set(CMAKE_IOS_INSTALL_COMBINED YES)
-  # foreach(arch ${IPHONEOS_ARCHS})
-  #   list(APPEND CMAKE_OSX_ARCHITECTURES "${arch}")
-  # endforeach()
-  # foreach(arch ${IPHONESIMULATOR_ARCHS})
-  #   list(APPEND CMAKE_OSX_ARCHITECTURES "${arch}")
-  # endforeach()
 else()
   # This will set CMAKE_CROSSCOMPILING to TRUE.
   # CMAKE_CROSSCOMPILING needed for try_run:
