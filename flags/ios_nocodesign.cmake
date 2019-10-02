@@ -16,19 +16,19 @@ else()
 
   # Verify XCODE_XCCONFIG_FILE
   set(
-      _polly_xcode_xcconfig_file_path
-      "${CMAKE_CURRENT_LIST_DIR}/../scripts/NoCodeSign.xcconfig"
+    _polly_xcode_xcconfig_file_path
+    "${CMAKE_CURRENT_LIST_DIR}/../scripts/NoCodeSign.xcconfig"
   )
 
   get_filename_component(
-      _polly_xcode_xcconfig_file_path
-      "${_polly_xcode_xcconfig_file_path}"
-      ABSOLUTE
+    _polly_xcode_xcconfig_file_path
+    "${_polly_xcode_xcconfig_file_path}"
+    ABSOLUTE
   )
 
   get_filename_component(
-      _polly_xcode_xcconfig_file_path_env
-      "$ENV{XCODE_XCCONFIG_FILE}"
+    _polly_xcode_xcconfig_file_path_env
+    "$ENV{XCODE_XCCONFIG_FILE}"
     ABSOLUTE
   )
 
